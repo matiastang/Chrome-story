@@ -33,3 +33,30 @@ open -a '/Applications/Safari.app' --args --disable-web-security --user-data-dir
 ```
 chromium-browser --disable-web-security
 ```
+
+2.1 自定义启动脚本
+
+* 创建文件夹
+```
+mkdir myChromeDevUserData
+```
+* 进入文件夹
+```
+cd myChromeDevUserData
+```
+* 查看文件夹目录
+```
+pwd
+结果：/Users/yunxi/Desktop/myChromeDevUserData
+```
+* 编写脚本(.command或.app)
+```
+#!/bin/sh
+open -n -a '/Applications/Google Chrome.app' --args --user-data-dir="/Users/yunxi/Desktop/myChromeDevUserData" --disable-web-security
+```
+* 设置权限
+```
+chmod +x  Chrome.command
+```
+* 启动
+直接双击 Chrome.command 会闪出一个控制台，然后自动消失。如果不想闪控制台的话，将文件的后缀名 .command 改为 .app ，以后直接双击就可以了。
