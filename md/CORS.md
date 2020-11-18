@@ -2,6 +2,8 @@
 
 1. 安装扩展(解决跨域)
 
+[佛跳墙VPN(永久免费)](https://www.haoxixin.com/cn/?a=tm#zero)
+
 [Allow CORS: Access-Control-Allow-origin](https://mybrowseraddon.com/access-control-allow-origin.html)
 
 使用正确的上网方式搜索安装扩展，点击`toggle on`开启扩展，可以右键->选项中设置白名单等。
